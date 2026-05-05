@@ -1,12 +1,12 @@
 # Curie
 
-Curie is a **Calibre plugin** that generates spoiler-free hints of characters and places and injects these as footnotes into your EPUB:s.
+Curie is a **Calibre plugin** that generates spoiler-free hints of characters and places and injects these as footnotes into your EPUBs.
 
 ## How it works
 
-First Curie fetches all that it can about the book's characters and locations from the web using Claude. This is then cross-referenced with the EPUB itself to make sure descriptions are correct and at the same time removing spoilers. Being the nature of AI, this fetching and massaging of data is non-deterministic. A JSON file is saved in the Calibres books folder with the results.
+First, Curie uses Claude to fetch information about the book's characters and locations from the web. This is then cross-referenced with the EPUB itself to make sure descriptions are correct and at the same time removing spoilers. Due to the nature of AI, this data fetching and processing is non-deterministic. A JSON file is saved in the Calibre's books folder with the results.
 
-The hints themselves (technically footnotes) are then injected into the EPUB. They are injected into the mention of it **after** the character or location has been described. This is processed locally. In other words, Claude doesn't change the EPUB itself (deterministic behaviour). This is good, as the injected hints added to the book can then be cleanly removed and modified.
+The hints themselves (technically footnotes) are then injected into the EPUB. They are injected at the point in the text where the character or location is first mentioned, but only after they have already been described. In other words, the EPUB injection is handled locally and deterministically — meaning Claude never modifies the EPUB directly. This is good, as the injected hints added to the book can then be cleanly removed and modified.
 
 ## Why Curie?
 
@@ -26,7 +26,7 @@ Reading books and getting immersed in a story is pure magic. Forgetting names an
 
 ## API Costs & Processing Time
 
-Using *Claude Haiku*, the average processing cost of an averaged length novel is around 0.30$. That includes both places and characters. Now – using *Sonnet* is costlier (around 3x), but from my experience Haiku deliveries quality summaries without any spoilers. Due to Rate Limits, a longer book will take longer time - expect a time of 1 to 4 minutes. 
+Using *Claude Haiku*, the average processing cost of an averaged length novel is around 0.30$. That includes both places and characters. Using *Sonnet* is costlier (around 3x), but from my experience Haiku delivers quality summaries without any spoilers. Due to Rate Limits, a longer book will take longer time - expect a time of 1 to 4 minutes. 
 
 ## Compatibility
 
@@ -38,7 +38,7 @@ Using *Claude Haiku*, the average processing cost of an averaged length novel is
 
 ### Nickel (Kobo default)
 
-* Requires **KEPUB** format to be able display hints as pop-ups
+* Requires **KEPUB** format to be able to display hints as pop-ups
 
 * No formatting (CSS) is allowed in the pop-up, only shows raw text
 
@@ -47,9 +47,8 @@ Untested
 
 ## Roadmap
 * [ ] Support for other API:s (Qwen, OpenAI, Gemini)
-* [ ] Descriptions of character or places gets updated chapter-by-chapter as the story unfolds (how to not make this madly expensive API-wise?)
+* [ ] Descriptions of character or places gets updated chapter-by-chapter as the story unfolds (how to not make this madly expensive token-wise?)
 * [ ] Inspect generated data inside the plugin GUI. Expected behaviour: Click a button inside the plugin GUI to see a visual representation of characters and/or places
 * [ ] Add map images for actual places, on country or world map (only feasible on KOReader)
-  * [ ] Interactive map for exploring places mentioned in novel
-* [ ] Ability to mark characters or places as "known" - requires Curie to be a plugin in KOReader
+* [ ] Ability to mark characters or places as "known" - requires Curie to also be a plugin in KOReader
 * [ ] Ability to toggle or highlight the hints upon user interaction (otherwise the hints should be hidden) - requires Curie to be a plugin in KOReader
