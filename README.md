@@ -12,9 +12,9 @@ The hints themselves (technically footnotes) are then injected into the EPUB. Th
 
 Reading books and getting immersed in a story is pure magic. Forgetting names and having to backtrack breaks that. This can be especially true when reading books that are not in your native tongue and have character names you can't really "taste". I'm looking at you, Dostoevsky.
 
-## API Costs
+## API Costs & Processing Time
 
-Using *Claude Haiku*, the average processing cost of an averaged length novel is around 0.30$. That includes both places and characters. Now – using *Sonnet* is costlier (around 3x), but from my experience Haiku deliveries quality summaries without any spoilers.
+Using *Claude Haiku*, the average processing cost of an averaged length novel is around 0.30$. That includes both places and characters. Now – using *Sonnet* is costlier (around 3x), but from my experience Haiku deliveries quality summaries without any spoilers. Due to Rate Limits, a longer book will take longer time - expect a time of 1 to 4 minutes. 
 
 ## Features
 
@@ -26,19 +26,22 @@ Using *Claude Haiku*, the average processing cost of an averaged length novel is
 
 * Supports KOReader and Nickel
 
-## KOReader vs. Nickel
+## Compatibility
 
 ### KOReader
 
-* Allows a richer styling of pop-ups
+* Enables a richer styling of pop-ups
 
 * Needs some settings changed to allow the hints to show up as pop-ups
 
-### Nickel
+### Nickel (Kobo default)
 
 * Requires **KEPUB** format to be able display hints as pop-ups
 
 * No formatting (CSS) is allowed in the pop-up, only shows raw text
+
+### Other readers
+Untested
 
 ## Roadmap
 
