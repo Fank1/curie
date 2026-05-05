@@ -22,6 +22,8 @@ Reading books and getting immersed in a story is pure magic. Forgetting names an
 
 * Supports KOReader and Nickel
 
+* Tested with 🇬🇧 English and 🇸🇪 Swedish, but should support any language Claude supports
+
 ## API Costs & Processing Time
 
 Using *Claude Haiku*, the average processing cost of an averaged length novel is around 0.30$. That includes both places and characters. Now – using *Sonnet* is costlier (around 3x), but from my experience Haiku deliveries quality summaries without any spoilers. Due to Rate Limits, a longer book will take longer time - expect a time of 1 to 4 minutes. 
