@@ -46,7 +46,7 @@ Using *Claude Haiku*, the average processing cost of an averaged length novel is
 Untested
 
 ## Roadmap
-
+* [ ] Support for other API:s (Qwen, OpenAI, Gemini)
 * [ ] Descriptions of character or places gets updated chapter-by-chapter as the story unfolds (how to not make this madly expensive API-wise?)
 * [ ] Inspect generated data inside the plugin GUI. Expected behaviour: Click a button inside the plugin GUI to see a visual representation of characters and/or places
 * [ ] Add map images for actual places, on country or world map (only feasible on KOReader)
