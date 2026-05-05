@@ -51,6 +51,7 @@ Untested
 * [ ] Support for other API:s (Qwen, OpenAI, Gemini)
 * [ ] Descriptions of character or places gets updated chapter-by-chapter as the story unfolds (how to not make this madly expensive token-wise?)
 * [ ] Inspect generated data inside the plugin GUI. Expected behaviour: Click a button inside the plugin GUI to see a visual representation of characters and/or places
+* [ ] Add support for hints converting Freedom Units into International System of Units
 * [ ] Add map images for actual places, on country or world map (only feasible on KOReader)
 * [ ] Ability to mark characters or places as "known" - requires Curie to also be a plugin in KOReader
 * [ ] Ability to toggle or highlight the hints upon user interaction (otherwise the hints should be hidden) - requires Curie to be a plugin in KOReader
