@@ -1,4 +1,4 @@
-<img src="docs/banner" width="800">
+<img src="docs/banner.png" width="auto">
 
 # Curie
 
