@@ -1,3 +1,5 @@
+<img src="docs/banner" width="800">
+
 # Curie
 
 Curie is a **Calibre plugin** that generates spoiler-free hints of characters and places and injects these as footnotes into your EPUBs.
