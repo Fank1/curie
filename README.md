@@ -36,7 +36,7 @@ Using *Claude Haiku*, the average processing cost of an averaged length novel is
 
 * Enables a richer styling of pop-ups
 
-* Needs some settings changed to allow the hints to show up as pop-ups
+* To enable these Hints as pop-ups, enable **Show footnotes in popup** in *Settings -> Taps and gestures -> Links*. 
 
 ### Nickel (Kobo default)
 
