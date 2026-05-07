@@ -1,14 +1,20 @@
-<img src="docs/banner.png" width="auto">
-
 # What is Curie?
 
 Curie is a **Calibre plugin** that generates spoiler-free hints of characters and places and injects these as footnotes into your EPUBs.
+
+<img src="docs/example-image.jpg" width="50%">
+
+*Photo of Wuthering Heights processed and running on KOReader.*
 
 ## How it works
 
 First, Curie uses Claude to fetch information about the book's characters and locations from the web. This is then cross-referenced with the EPUB itself to make sure descriptions are correct and at the same time removing spoilers. Due to the nature of AI, this data fetching and processing is non-deterministic. A JSON file is saved in the Calibre's books folder with the results.
 
 The hints themselves (technically footnotes) are then injected into the EPUB. They are injected at the point in the text where the character or location is first mentioned, but only after they have already been described. In other words, the EPUB injection is handled locally and deterministically — meaning Claude never modifies the EPUB directly. This is good, as the injected hints added to the book can then be cleanly removed and modified.
+
+<img src="docs/plugin-screenshot.png" width="auto">
+
+*Screenshot of plugin in Calibre*
 
 ## Why Curie?
 
