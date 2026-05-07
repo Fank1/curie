@@ -36,7 +36,19 @@ Reading books and getting immersed in a story is pure magic. Forgetting names an
 
 Using *Claude Haiku*, the average processing cost of an averaged length novel is around 0.30$. That includes both places and characters. Using *Sonnet* is costlier (around 3x), but from my experience Haiku delivers quality summaries without any spoilers. Due to Rate Limits, a longer book will take longer time - expect a time of 1 to 4 minutes. 
 
-## Compatibility
+## Usage & Requirements
+
+> [!WARNING]  
+> Claude has been tested with a 20+ different EPUBs, but the plugin is still a first version. Please make a backup before processing!  
+
+### Requirements
+* A computer running Calibre
+* A Claude Platform account with some Credits topped up
+
+### Usage 
+* Just download the ZIP from repo and install the plugin in Calibre. The plugin will add a new Column to the Book List, so it's easy to see if the book has been "Curied" or not. 
+
+## Reader Compatibility
 
 ### KOReader
 
@@ -55,6 +67,7 @@ Untested
 
 ## Roadmap
 * [ ] Support for other API:s (Qwen, OpenAI, Gemini)
+* [ ] Improved performance (Rate Limit is kind of annoying)
 * [ ] Descriptions of character or places gets updated chapter-by-chapter as the story unfolds (how to not make this madly expensive token-wise?)
 * [ ] Inspect generated data inside the plugin GUI. Expected behaviour: Click a button inside the plugin GUI to see a visual representation of characters and/or places
 * [ ] Add support for hints converting Freedom Units into International System of Units
